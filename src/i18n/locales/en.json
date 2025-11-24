@@ -1,0 +1,70 @@
+{
+  "header": {
+    "title": "Gorkha Brewery Bottle Recycling Champion",
+    "subtitle": "Never leave a bottle behind"
+  },
+  "rules": {
+    "title": "Rules & Guidelines",
+    "items": [
+      {
+        "title": "Participating Restaurants",
+        "description": "Only registered restaurants can participate in the recycling program. Registration is free and open to all licensed establishments."
+      },
+      {
+        "title": "Bottle Collection",
+        "description": "Collect empty Gorkha, Carlsberg, and Tuborg bottles from your restaurant. Ensure bottles are clean and undamaged for proper recycling."
+      },
+      {
+        "title": "XP Points System",
+        "description": "Earn XP points for each bottle recycled. Points are calculated based on bottle type and quantity. Track your progress on the leaderboard."
+      },
+      {
+        "title": "Monthly Rankings",
+        "description": "Leaderboard resets monthly. Top performing restaurant each month receives special rewards including Pool Table, Beer Dispenser Unit, or Premium Lighting Installation."
+      },
+      {
+        "title": "Milestone Achievements",
+        "description": "Reach milestone targets to unlock exclusive rewards. First 5 restaurants to cross 5,000 XP receive Branded Mini Fridge or Speaker."
+      },
+      {
+        "title": "Grand Finale",
+        "description": "Top 3 restaurants at the end of the program receive Grand Finale Rewards including trip to Thailand, event hosting credits, and premium table sets."
+      }
+    ]
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "xp": "XP"
+  },
+  "statistics": {
+    "totalBottles": "Total Bottle Recycled",
+    "participatingRestaurants": "Participating Restaurants",
+    "bottlesPerRestaurant": "Bottle Averaged Per Restaurant"
+  },
+  "prizes": {
+    "title": "Prizes",
+    "monthly": {
+      "title": "Monthly High Performers",
+      "top1": "Top 1",
+      "description": "Top restaurant of each month will receive one of the following: Pool Table, Beer Dispenser Unit, or Premium Lighting Installation."
+    },
+    "milestone": {
+      "title": "Milestone Rewards",
+      "first5": "First 5 Restaurants to cross 5,000 XP",
+      "description": "First 5 restaurants to cross 5,000 XP receive Branded Mini Fridge or Speaker; First 10 restaurants to cross 10,000 XP receive Outdoor Umbrella + Gorkha Branded Chairs."
+    },
+    "grandFinale": {
+      "title": "Grand Finale Rewards",
+      "top1": "Top 1",
+      "top1Desc": "Trip to Thailand covering flight tickets, hotel bookings and transportation in package.",
+      "top2": "Top 2",
+      "top2Desc": "Event Hosting Credit + Free Gorkha Beer",
+      "top3": "Top 3",
+      "top3Desc": "Table Set + Branding Wall"
+    }
+  },
+  "footer": {
+    "copyright": "© Copyright 2025 Gorkha Brewery. All Rights Reserved"
+  }
+}
+

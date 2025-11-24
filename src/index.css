@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark: #0d4a2e;
+  --primary-medium: #1a6b47;
+  --primary-light: #e8f5e9;
+  --primary-lighter: #f1f8f4;
+  --accent-teal: #00695c;
+  --accent-gold: #ffb300;
+  --accent-orange: #ff6f00;
+  --accent-blue: #4fc3f7;
+  --text-dark: #0d2818;
+  --text-medium: #1a5f3f;
+  --text-light: #ffffff;
+  --bg-white: #ffffff;
+  --bg-cream: #faf9f6;
+  --bg-light-green: #f1f8f4;
+  --border-color: #c8e6c9;
+  --shadow-sm: 0 2px 8px rgba(13, 74, 46, 0.08);
+  --shadow-md: 0 4px 16px rgba(13, 74, 46, 0.12);
+  --shadow-lg: 0 8px 32px rgba(13, 74, 46, 0.16);
+  --gradient-primary: linear-gradient(135deg, #0d4a2e 0%, #1a6b47 50%, #2d8f5f 100%);
+  --gradient-gold: linear-gradient(135deg, #ffb300 0%, #ff8f00 100%);
+  --gradient-hero: linear-gradient(135deg, #0d4a2e 0%, #1a6b47 50%, #2d8f5f 100%);
+}
+
+body {
+  font-family: 'Inter', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
+  background-attachment: fixed;
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light-green);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-medium);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+

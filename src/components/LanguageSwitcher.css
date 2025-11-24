@@ -1,0 +1,73 @@
+.language-switcher {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  gap: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 6px;
+  border-radius: 50px;
+  box-shadow: 
+    0 8px 32px rgba(13, 74, 46, 0.15),
+    0 0 0 1px rgba(13, 74, 46, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.lang-btn {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: var(--primary-dark);
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.lang-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-primary);
+  border-radius: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.lang-btn:hover {
+  color: var(--text-light);
+}
+
+.lang-btn:hover::before {
+  opacity: 1;
+}
+
+.lang-btn.active {
+  color: var(--text-light);
+  background: var(--gradient-primary);
+  box-shadow: 0 4px 12px rgba(13, 74, 46, 0.3);
+}
+
+.lang-btn.active::before {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .language-switcher {
+    top: 20px;
+    right: 20px;
+    padding: 4px;
+  }
+  
+  .lang-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

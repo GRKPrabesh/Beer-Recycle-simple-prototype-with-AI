@@ -1,0 +1,368 @@
+.header {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+
+.header-top {
+  padding: 30px 40px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-badge {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(13, 74, 46, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logo-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(13, 74, 46, 0.15);
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--primary-dark);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo-separator {
+  color: var(--primary-medium);
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.header-banner {
+  position: relative;
+  background: var(--gradient-hero);
+  padding: 80px 60px;
+  border-radius: 30px;
+  margin: 40px auto 0;
+  max-width: 1600px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(13, 74, 46, 0.3);
+}
+
+.banner-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  opacity: 0.6;
+}
+
+.banner-glow {
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 179, 0, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+}
+
+.header-content {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.header-text {
+  color: var(--text-light);
+}
+
+.title-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  letter-spacing: -1px;
+}
+
+.header-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 0.95;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.header-stats-preview {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stat-preview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-preview-number {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-preview-label {
+  font-size: 12px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-preview-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.recycling-symbol-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+
+.recycling-symbol {
+  font-size: 120px;
+  color: var(--text-light);
+  opacity: 0.9;
+  z-index: 2;
+  animation: rotate 20s linear infinite;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.symbol-ring {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: rotate 15s linear infinite reverse;
+}
+
+.symbol-ring.ring-2 {
+  width: 220px;
+  height: 220px;
+  border-width: 2px;
+  animation-duration: 25s;
+}
+
+.header-bottles {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+
+.bottle-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottle {
+  width: 60px;
+  height: 140px;
+  border-radius: 12px 12px 6px 6px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+}
+
+.bottle:hover {
+  transform: translateY(-5px);
+}
+
+.bottle-label {
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.bottle-cap {
+  position: absolute;
+  top: -8px;
+  width: 50px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 6px 6px 2px 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.bottle-1 {
+  background: linear-gradient(180deg, #4caf50 0%, #2e7d32 50%, #1b5e20 100%);
+  animation: float 3s ease-in-out infinite;
+}
+
+.bottle-2 {
+  background: linear-gradient(180deg, #8d6e63 0%, #6d4c41 50%, #5d4037 100%);
+  height: 160px;
+  animation: float 3s ease-in-out infinite 0.5s;
+}
+
+.bottle-3 {
+  background: linear-gradient(180deg, #4caf50 0%, #2e7d32 50%, #1b5e20 100%);
+  animation: float 3s ease-in-out infinite 1s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.bottle-shadow {
+  width: 50px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  filter: blur(8px);
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .header-title {
+    font-size: 48px;
+  }
+  
+  .header-subtitle {
+    font-size: 20px;
+  }
+  
+  .recycling-symbol {
+    font-size: 80px;
+  }
+  
+  .recycling-symbol-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 968px) {
+  .header-banner {
+    padding: 60px 40px;
+    border-radius: 20px;
+  }
+  
+  .header-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .header-title {
+    font-size: 36px;
+  }
+  
+  .header-subtitle {
+    font-size: 18px;
+  }
+  
+  .header-bottles {
+    justify-content: center;
+    padding-right: 0;
+  }
+  
+  .header-stats-preview {
+    justify-content: center;
+  }
+  
+  .recycling-symbol-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-top {
+    padding: 20px 20px 0;
+  }
+  
+  .header-banner {
+    padding: 40px 30px;
+    margin: 20px auto 0;
+  }
+  
+  .header-title {
+    font-size: 28px;
+  }
+  
+  .header-subtitle {
+    font-size: 16px;
+  }
+  
+  .bottle {
+    width: 45px;
+    height: 110px;
+  }
+  
+  .bottle-2 {
+    height: 130px;
+  }
+}
